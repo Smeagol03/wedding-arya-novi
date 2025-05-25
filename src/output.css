@@ -238,6 +238,9 @@
   .bottom-6 {
     bottom: calc(var(--spacing) * 6);
   }
+  .bottom-10 {
+    bottom: calc(var(--spacing) * 10);
+  }
   .z-0 {
     z-index: 0;
   }
@@ -384,6 +387,9 @@
   }
   .h-px {
     height: 1px;
+  }
+  .h-screen {
+    height: 100vh;
   }
   .max-h-96 {
     max-height: calc(var(--spacing) * 96);
