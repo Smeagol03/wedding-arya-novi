@@ -33,35 +33,26 @@
 <body>
     <audio id="bgMusic" src="./asset/lagu/music_bg.mp3" loop></audio>
     <section id="invitation-cover z-5"
-        class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-100 to-transparent p-4 sm:p-8">
+        class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden bg-black p-4 sm:p-8">
         <!-- Animated background elements -->
-        <div class="absolute inset-0 opacity-15 z-0"
-            style="background-image: url('./asset/img/mempelai/bg_open_2.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 opacity-50 z-0"
+            style="background-image: url('./asset/img/berdua.jpg'); background-size: cover; background-position: center;">
         </div>
 
-        <div class="container mx-auto text-center z-10 px-4 sm:px-6 max-w-xl">
-
-            <!-- Enhanced photo frame with animation -->
-            <div class="relative mb-4 sm:mb-5 md:mb-6">
-                <div
-                    class="w-64 h-w-64 sm:w-48 sm:h-48 md:w-52 md:h-52 lg:w-60 lg:h-60 mx-auto rounded-full overflow-hidden border-2 border-blue-500 blue-pink-300 shadow-lg relative">
-                    <img src="./asset/img/mempelai/bg_open.jpg" alt="Mempelai" class="w-full h-full object-cover">
-                </div>
-            </div>
-
+        <div class="container absolute bottom-4 mx-auto text-center z-10 px-4 sm:px-6 max-w-xl">
             <!-- Names with elegant styling and animation -->
             <div>
-                <h2 class="text-4xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-4 md:mb-5"
-                    style="font-family: 'Sacramento', cursive; color: #be185d;">
+                <h2 class="text-white font-medium text-4xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-4 md:mb-5"
+                    style="font-family: 'Sacramento', cursive">
                     Arya & Novi
                 </h2>
             </div>
             <!-- Elegant invitation card with glass morphism effect -->
             <div
-                class="relative bg-gradient-to-br from-white via-blue-50 to-rose-100/80 p-2 sm:p-8 md:p-4 mx-auto mb-6 border-0 shadow-2xl ring-2 ring-blue-200/60 ring-offset-2 ring-offset-white backdrop-blur-lg transition-all duration-300 hover:scale-105 hover:shadow-blue-200/60 rounded-lg max-w-md">
+                class="relative bg-white p-2 sm:p-8 md:p-4 mx-auto mb-6 border-0 shadow-2xl ring-2 ring-white ring-offset-2 ring-offset-blue-400 backdrop-blur-lg transition-all duration-300 hover:shadow-white max-w-md">
                 <div>
                     <h3 class="text-base sm:text-lg md:text-xl font-semibold mb-2 tracking-wide"
-                        style="font-family: 'Lora', serif; color: #be185d; letter-spacing: 0.02em;">
+                        style="font-family: 'Lora', serif;letter-spacing: 0.02em;">
                         Kepada Yth.
                     </h3>
                     <div class="flex items-center justify-center mb-2">
@@ -79,7 +70,7 @@
             <!-- Enhanced button with animation -->
             <div>
                 <button id="open-invitation"
-                    class="bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white py-2 px-5 sm:px-6 rounded-full transition duration-300 ease-in-out flex items-center mx-auto text-sm shadow-lg transform hover:scale-105"
+                    class="bg-blue-500 hover:to-blue-600 text-white py-2 px-5 sm:px-6 rounded-full transition duration-300 ease-in-out flex items-center mx-auto text-sm shadow-lg transform hover:scale-105"
                     style="font-family: 'Poppins', sans-serif;">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -90,11 +81,7 @@
                 </button>
             </div>
         </div>
-        <!-- Footer note with subtle animation -->
-        <div class="absolute bottom-2 sm:bottom-3 left-0 right-0 text-center"
-            style="font-family: 'Quicksand', sans-serif; color: #6b7280;">
-            <span class="text-xs"><small>Mohon maaf apabila ada kesalahan penulisan nama/gelar</small></span>
-        </div>
+        <!-- Animated hearts -->
         <div class="hearts-container">
             <div class="love-heart"></div>
             <div class="love-heart"></div>
@@ -162,7 +149,7 @@
             </div>
             <div class="mt-8 flex justify-center" data-aos="fade-up">
                 <button id="addToCalendarBtn"
-                    class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-4 sm:py-3 sm:px-6 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 flex items-center text-sm sm:text-base md:text-lg w-auto animate-bounce"
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 sm:py-3 sm:px-6 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 flex items-center text-sm sm:text-base md:text-lg w-auto animate-bounce"
                     style="font-family: 'Quicksand', sans-serif;">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -179,18 +166,17 @@
                 <!-- Bride Photo -->
                 <div class="w-full md:w-1/3 max-w-xs" data-aos="fade-right">
                     <div class="bg-white p-4 rounded-xl shadow-lg border border-blue-200 overflow-hidden">
-                        <img src="./asset/img/mempelai/pria.JPG" alt="Bride"
-                            class="w-full h-auto rounded-lg object-cover transition-transform duration-300 hover:scale-105">
+                        <img src="./asset/img/har02.png" alt="Bride" class="w-full h-auto rounded-lg object-cover">
                         <h3 class="text-lg mt-4 mb-1" style="font-family: 'Poppins', sans-serif; color: #be185d;">
                             Harfika Aryadi</h3>
                     </div>
                 </div>
 
                 <!-- Decorative Element -->
-                <div class="hidden md:block" data-aos="zoom-in">
+                <div data-aos="zoom-in">
                     <div
-                        class="w-16 h-16 rounded-full bg-pink-100 border-4 border-pink-200 flex items-center justify-center animate-pulse">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-500" viewBox="0 0 20 20"
+                        class="w-16 h-16 rounded-full bg-white border-4 border-blue-200 flex items-center justify-center animate-pulse">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" viewBox="0 0 20 20"
                             fill="currentColor">
                             <path fill-rule="evenodd"
                                 d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
@@ -202,8 +188,7 @@
                 <!-- Groom Photo -->
                 <div class="w-full md:w-1/3 max-w-xs" data-aos="fade-left">
                     <div class="bg-white p-4 rounded-xl shadow-lg border border-blue-200 overflow-hidden">
-                        <img src="./asset/img/mempelai/wanita.jpg" alt="Groom"
-                            class="w-full h-auto rounded-lg object-cover transition-transform duration-300 hover:scale-105">
+                        <img src="./asset/img/novi02.png" alt="Groom" class="w-full h-auto rounded-lg object-cover">
                         <h3 class="text-lg mt-4 mb-1" style="font-family: 'Poppins', sans-serif; color: #be185d;">
                             Novi sabania</h3>
                     </div>
@@ -281,8 +266,8 @@
                             </h3>
                             <div class="w-16 h-1 bg-gradient-to-r from-pink-200 to-pink-400 mx-auto mb-4 rounded-full">
                             </div>
-                            <p class="font-semibold text-lg mb-2" style="font-family: 'Quicksand', sans-serif;">Minggu,
-                                25
+                            <p class="font-semibold text-lg mb-2" style="font-family: 'Quicksand', sans-serif;">Rabu,
+                                28
                                 Mei 2025</p>
                             <div class="flex justify-center items-center mb-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-500 mr-2" fill="none"
@@ -290,7 +275,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                                <p class="text-gray-700" style="font-family: 'Quicksand', sans-serif;">07:30 WITA -
+                                <p class="text-gray-700" style="font-family: 'Quicksand', sans-serif;">16:00 WITA -
                                     Selesai
                                 </p>
                             </div>
@@ -302,63 +287,13 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
-                                <p class="text-gray-700" style="font-family: 'Quicksand', sans-serif;">Masjid Besar
-                                    Jami'iyyatul Qudsiyyah
+                                <p class="text-gray-700" style="font-family: 'Quicksand', sans-serif;">Rumah Pengantin
+                                    Pria
                                 </p>
                             </div>
                             <div class="bg-pink-50 p-3 rounded-lg">
                                 <p class="text-sm text-gray-600" style="font-family: 'Quicksand', sans-serif;">
-                                    Desa Pringgasela, Kecamatan Pringgasela, Kabupaten Lombok Timur, Nusa Tenggara Barat
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full md:max-w-1/3 mx-auto">
-                    <!-- Resepsi -->
-                    <div class="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-pink-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                        data-aos="fade-up">
-                        <div class="text-center">
-                            <div class="inline-block p-3 bg-pink-50 rounded-full mb-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-500" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
-                            </div>
-                            <h3 class="text-3xl mb-3" style="font-family: 'Great Vibes', cursive; color: #be185d;">
-                                Resepsi
-                            </h3>
-                            <div class="w-16 h-1 bg-gradient-to-r from-pink-200 to-pink-400 mx-auto mb-4 rounded-full">
-                            </div>
-                            <p class="font-semibold text-lg mb-2" style="font-family: 'Quicksand', sans-serif;">Minggu,
-                                25
-                                Mei 2025</p>
-                            <div class="flex justify-center items-center mb-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-500 mr-2" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                                <p class="text-gray-700" style="font-family: 'Quicksand', sans-serif;">11:00 WITA -
-                                    Selesai
-                                </p>
-                            </div>
-                            <div class="flex justify-center items-center mb-5">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-500 mr-2" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
-                                <p class="text-gray-700" style="font-family: 'Quicksand', sans-serif;">Showroom
-                                    Pringgasela
-                                </p>
-                            </div>
-                            <div class="bg-pink-50 p-3 rounded-lg">
-                                <p class="text-sm text-gray-600" style="font-family: 'Quicksand', sans-serif;">
-                                    Jl. Veteran, Kecamatan Pringgasela, Kabupaten Lombok Timur, Nusa Tenggara Barat
+                                    Kampung Pancuran Desa Rumbuk Kec. Sakra
                                 </p>
                             </div>
                         </div>
@@ -367,123 +302,18 @@
             </div>
             <div class="flex flex-col items-center">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3945.118384676434!2d116.48496800000001!3d-8.584615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMzUnMDQuNiJTIDExNsKwMjknMDUuOSJF!5e0!3m2!1sen!2sid!4v1747619776770!5m2!1sen!2sid"
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3944.2996830670745!2d116.48602677501455!3d-8.663022791384401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMzknNDYuOSJTIDExNsKwMjknMTkuMCJF!5e0!3m2!1sen!2sid!4v1748137864181!5m2!1sen!2sid"
                     class="w-full h-64 py-8" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" data-aos="fade-up"></iframe>
-                <a href="https://maps.app.goo.gl/yXZ7WB6zU3oinrmx8" target="_blank"
+                <a href="https://maps.app.goo.gl/5SYZGh7ExHQq4StG7" target="_blank"
                     class="bg-blue-500 hover:bg-blue-600 transition duration-300 px-3 py-1 text-white rounded-full animate-bounce"
                     style="font-family: 'Poppins';">Click
                     Lokasi</a>
             </div>
         </div>
     </section>
-    <!-- Love Story Section -->
-    <section id="love-story" class="pt-20 pb-6 bg-gradient-to-b from-pink-50 to-white overflow-hidden">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl mb-4" style="font-family: 'Great Vibes', cursive; color: #be185d;">Kisah Cinta Kami
-                </h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-pink-200 to-pink-400 mx-auto mb-6 rounded-full"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto" style="font-family: 'Quicksand', sans-serif;">
-                    Perjalanan cinta kami yang bermula dari tatapan pertama hingga janji suci di pelaminan
-                </p>
-            </div>
-
-            <!-- Timeline -->
-            <div class="relative">
-                <!-- Center Line -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-pink-200 rounded-full"></div>
-
-                <!-- Timeline Items -->
-                <div class="timeline-container">
-                    <!-- First Meeting -->
-                    <div class="timeline-item mb-16" data-aos="fade-right">
-                        <div class="flex flex-col md:flex-row items-center">
-                            <div class="md:w-1/2 md:pr-8 mb-8 md:mb-0 md:text-right">
-                                <div
-                                    class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-all duration-300">
-                                    <h3 class="text-2xl mb-2"
-                                        style="font-family: 'Great Vibes', cursive; color: #be185d;">Pertemuan Pertama
-                                    </h3>
-                                    <p class="text-gray-700 mb-2" style="font-family: 'Quicksand', sans-serif;">
-                                        April 2024</p>
-                                    <p class="text-gray-700" style="font-family: 'Quicksand', sans-serif;">Alhamdulillah
-                                        bertemu melalui perantara seorang teman baik dan memutuskan untuk saling
-                                        mengenal
-                                        satu sama lain.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="timeline-dot"></div>
-                            <div class="md:w-1/2 md:pl-8 hidden md:block">
-                                <div class="h-64 w-full rounded-2xl overflow-hidden shadow-lg">
-                                    <img src="./asset/img/mempelai/ketemu.jpg" alt="Pertemuan Pertama"
-                                        class="w-full h-full object-cover">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Proposal -->
-                    <div class="timeline-item mb-16" data-aos="fade-left">
-                        <div class="flex flex-col md:flex-row items-center">
-                            <div class="md:w-1/2 md:pr-8 hidden md:block">
-                                <div class="h-64 w-full rounded-2xl overflow-hidden shadow-lg">
-                                    <img src="./asset/img/mempelai/lamaran.jpg" alt="Lamaran"
-                                        class="w-full h-full object-cover">
-                                </div>
-                            </div>
-                            <div class="timeline-dot"></div>
-                            <div class="md:w-1/2 md:pl-8 mb-8 md:mb-0">
-                                <div
-                                    class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-all duration-300">
-                                    <h3 class="text-2xl mb-2"
-                                        style="font-family: 'Great Vibes', cursive; color: #be185d;">Lamaran</h3>
-                                    <p class="text-gray-600 mb-2" style="font-family: 'Quicksand', sans-serif;">Mei 2025
-                                    </p>
-                                    <p class="text-gray-700" style="font-family: 'Quicksand', sans-serif;">
-                                        Dengan sebuah cincin dan janji seumur hidup, kami memutuskan untuk melangkah ke
-                                        jenjang yang lebih serius. Air mata bahagia mengiringi momen sakral ini.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Wedding -->
-                    <div class="timeline-item" data-aos="fade-up">
-                        <div class="flex flex-col items-center">
-                            <div class="timeline-dot bg-pink-500"></div>
-                            <div class="w-full md:w-2/3 mx-auto">
-                                <div
-                                    class="bg-gradient-to-r from-pink-100 to-pink-200 p-8 rounded-2xl shadow-lg border border-pink-300 hover:shadow-xl transition-all duration-300 text-center">
-                                    <h3 class="text-3xl mb-3"
-                                        style="font-family: 'Great Vibes', cursive; color: #be185d;">Hari Pernikahan
-                                    </h3>
-                                    <p class="text-gray-700 mb-3" style="font-family: 'Quicksand', sans-serif;">25 Mei
-                                        2025</p>
-                                    <p class="text-gray-800" style="font-family: 'Quicksand', sans-serif;">
-                                        Hari yang kami nantikan akhirnya tiba. Di hadapan Tuhan, keluarga, dan sahabat,
-                                        kami mengikrarkan janji suci untuk saling mencintai dan menjaga hingga akhir
-                                        hayat.
-                                    </p>
-                                    <div class="mt-4">
-                                        <span
-                                            class="inline-block bg-white px-4 py-2 rounded-full text-pink-600 font-semibold text-sm"
-                                            style="font-family: 'Quicksand', sans-serif;">
-                                            Awal dari cerita cinta seumur hidup kami
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Elegant Divider Section -->
-    <section class="py-8 relative overflow-hidden">
+    <section class="relative overflow-hidden">
         <div class="container mx-auto px-4">
             <div class="flex flex-col items-center justify-center" data-aos="fade-up">
                 <!-- Decorative divider with floral elements -->
@@ -529,69 +359,6 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-20 bg-gradient-to-b from-white to-pink-50 overflow-hidden">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl mb-4" style="font-family: 'Great Vibes', cursive; color: #be185d;">Galeri Foto</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-pink-200 to-pink-400 mx-auto mb-6 rounded-full"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto" style="font-family: 'Quicksand', sans-serif;">
-                    Momen-momen indah yang kami abadikan dalam perjalanan cinta kami
-                </p>
-            </div>
-
-            <!-- Masonry Gallery with uniform height -->
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-                <!-- Image 1 -->
-                <div class="mb-3 md:mb-4" data-aos="zoom-in">
-                    <div
-                        class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-64 md:h-72">
-                        <img src="./asset/img/1.jpg" alt="Gallery Image" class="w-full h-full object-cover">
-                    </div>
-                </div>
-
-                <!-- Image 2 -->
-                <div class="mb-3 md:mb-4" data-aos="zoom-in">
-                    <div
-                        class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-64 md:h-72">
-                        <img src="./asset/img/2.jpg" alt="Gallery Image" class="w-full h-full object-cover">
-                    </div>
-                </div>
-
-                <!-- Image 3 -->
-                <div class="mb-3 md:mb-4 col-span-2 md:col-span-1" data-aos="zoom-in">
-                    <div
-                        class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-64 md:h-72">
-                        <img src="./asset/img/3.jpg" alt="Gallery Image" class="w-full h-full object-cover">
-                    </div>
-                </div>
-
-                <!-- Image 4 -->
-                <div class="mb-3 md:mb-4" data-aos="zoom-in">
-                    <div
-                        class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-64 md:h-72">
-                        <img src="./asset/img/4.jpg" alt="Gallery Image" class="w-full h-full object-cover">
-                    </div>
-                </div>
-
-                <!-- Image 5 -->
-                <div class="mb-3 md:mb-4" data-aos="zoom-in">
-                    <div
-                        class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-64 md:h-72">
-                        <img src="./asset/img/5.jpg" alt="Gallery Image" class="w-full h-full object-cover">
-                    </div>
-                </div>
-
-                <!-- Image 6 -->
-                <div class="mb-3 md:mb-4 col-span-2 md:col-span-1" data-aos="zoom-in">
-                    <div
-                        class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-64 md:h-72">
-                        <img src="./asset/img/6.jpg" alt="Gallery Image" class="w-full h-full object-cover">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- RSVP Section -->
     <section id="rsvp" class="py-20 bg-gradient-to-b from-white to-pink-50 overflow-hidden">
         <div class="container mx-auto px-4">
@@ -607,7 +374,7 @@
             <div class="max-w-2xl mx-auto" data-aos="fade-up">
                 <div class="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-pink-200">
                     <form id="rsvpForm" class="space-y-6" method="POST"
-                        action="https://script.google.com/macros/s/AKfycbxs24MuABkn2z0tY3spjbvv75ie_wKo_WrHF47kNT0m6QtcwK6Wkuixh1rYGPiPM-HV/exec">
+                        action="https://script.google.com/macros/s/AKfycbw5n4s-71_Fbmcn8cR9cnjPWwh12bPN23_J752WioDL6IUZnrV2nVCbBM67-z_0Yvta/exec">
                         <!-- Nama -->
                         <div>
                             <label for="name" class="block text-gray-700 font-medium mb-2"
@@ -689,15 +456,15 @@
 
             <!-- Couple Photo -->
             <div class="max-w-4xl mx-auto mb-12" data-aos="fade-up">
-                <div class="bg-white p-6 rounded-2xl shadow-lg border border-pink-200 overflow-hidden">
+                <div class="p-6 rounded-2xl overflow-hidden">
                     <div class="flex flex-col md:flex-row items-center">
                         <div class="md:w-1/2 p-4">
-                            <img src="./asset/img/mempelai/turut.jpg" alt="Couple Photo"
+                            <img src="./asset/img/berdua.jpg" alt="Couple Photo"
                                 class="w-full h-auto rounded-xl shadow-md transform transition-all duration-500 hover:scale-105">
                         </div>
                         <div class="md:w-1/2 p-4 text-center md:text-left">
-                            <h3 class="text-lg mb-4" style="font-family: 'Poppins'; color: #be185d;">
-                                Arya<br>&<br>Novi
+                            <h3 class="text-2xl mb-4" style="font-family: 'Poppins', sans-serif; color: #be185d;">
+                                Arya & Novi
                             </h3>
                             <p class="text-gray-700 mb-6" style="font-family: 'Quicksand', sans-serif;">
                                 Kami mengucapkan terima kasih yang sebesar-besarnya atas kehadiran dan doa restu yang

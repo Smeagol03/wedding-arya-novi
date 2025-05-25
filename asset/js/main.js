@@ -2,10 +2,11 @@
 AOS.init({
   duration: 800,
   easing: "ease-in-sine",
+  once: true, // Animation only happens once
 });
 
 // Set the date we're counting down to
-var countDownDate = new Date("May 25, 2025 11:00:00").getTime();
+var countDownDate = new Date("May 28, 2025 16:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -39,12 +40,13 @@ document
   .getElementById("addToCalendarBtn")
   .addEventListener("click", function () {
     // Event details
-    const title = "Pernikahan Wijaya & Rara";
+    const title = "Pernikahan Arya & Novi";
     const description =
       "Kami mengundang Anda untuk berbagi kebahagiaan di hari pernikahan kami";
-    const location = "Gedung Serbaguna, Jl. Contoh No. 123, Kecamatan, Kota";
-    const startDate = new Date("2023-01-01T11:00:00");
-    const endDate = new Date("2023-01-01T14:00:00");
+    const location =
+      "Rumah Mempelai Pria, Kampung pancuran, Desa Rumbuk, Kec. Sakra Kab. Lombok Timur, Nusa Tenggara Barat";
+    const startDate = new Date("2023-05-28T16:00:00");
+    const endDate = new Date("2023-05-28T18:00:00");
 
     // Format for Google Calendar
     const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
@@ -60,30 +62,19 @@ document
   });
 
 // Handle invitation opening
-
 document.addEventListener("DOMContentLoaded", function () {
-  // Tambahkan class untuk menonaktifkan scroll
   document.documentElement.classList.add("no-scroll");
   document.body.classList.add("no-scroll");
-
-  // Reset posisi scroll ke atas saat reload
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   };
-
   const button = document.getElementById("open-invitation");
   const isiUndangan = document.getElementById("isi-undangan");
-
   if (button && isiUndangan) {
     button.addEventListener("click", function () {
-      // Aktifkan scroll kembali dengan menghapus class
       document.documentElement.classList.remove("no-scroll");
       document.body.classList.remove("no-scroll");
-
-      // Scroll halus ke bagian undangan
       isiUndangan.scrollIntoView({ behavior: "smooth" });
-
-      // Mainkan musik
       const music = document.getElementById("bgMusic");
       if (music) {
         music.play().catch((e) => {
